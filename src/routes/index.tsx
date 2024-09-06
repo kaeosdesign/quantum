@@ -1,5 +1,6 @@
 import { createSignal, onMount } from "solid-js";
 import { commands, events } from "~/bindings";
+import Charts from "~/components/Charts";
 
 export default function Page() {
   const [greetMsg, setGreetMsg] = createSignal("");
@@ -75,6 +76,7 @@ export default function Page() {
 
       <p>{greetMsg()}</p>
       <p>{demoEventMessage()}</p>
+      <Charts />
     </div>
   );
 }
