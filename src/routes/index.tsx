@@ -20,6 +20,7 @@ export default function Page() {
 
   return (
     <div class="flex min-h-screen flex-col justify-center gap-6 text-center dark:bg-neutral-800 dark:text-neutral-200">
+        <Charts />
       <h1 class="text-center text-4xl font-semibold text-neutral-50">
         Quantum
       </h1>
@@ -83,7 +84,6 @@ export default function Page() {
           </h2>
           <h3 class="text-xl text-gray-200">Bar Chart</h3>
         </div>
-        <Charts />
       </div>
     </div>
   );

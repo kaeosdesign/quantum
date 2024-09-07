@@ -1,5 +1,5 @@
 import { createSignal, createEffect } from "solid-js";
-const [chartData, setChartData] = createSignal<ChartData>({});
+const [chartData, setChartData] = createSignal<ChartData>(undefined);
 
 
 type ChartData = {
@@ -10,7 +10,7 @@ type ChartData = {
   xaxis: {
     categories: string[];
   };
-};
+} | undefined
 
 createEffect(() => {
   const fetchData = async () => {
