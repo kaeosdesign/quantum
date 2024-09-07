@@ -5,9 +5,9 @@ function Charts() {
   return (
     <SolidApexCharts
       series={undefined}
-      width="800"
       type="bar"
       options={chartData()}
+      class="w-full"
     />
   );
 }

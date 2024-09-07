@@ -76,7 +76,15 @@ export default function Page() {
 
       <p>{greetMsg()}</p>
       <p>{demoEventMessage()}</p>
-      <Charts />
+      <div class="flex flex-col justify-center text-gray-900">
+        <div class="">
+          <h2 class="text-2xl text-gray-200">
+            Using ApexCharts.js to create charts in SolidJS
+          </h2>
+          <h3 class="text-xl text-gray-200">Bar Chart</h3>
+        </div>
+        <Charts />
+      </div>
     </div>
   );
 }
